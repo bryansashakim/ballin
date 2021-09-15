@@ -72,7 +72,7 @@ alert(inputNumVal);
           {
              var num1 = document.myform.number1.value;
              var num2 = document.myform.number2.value;
-             document.getElementById('add').value = num1;
+             document.getElementById('num').value = num1;
           }
         </script>
       </HEAD>
@@ -82,9 +82,18 @@ alert(inputNumVal);
          <FORM NAME="myform">
           <INPUT TYPE="text" NAME="number1" VALUE=""/> + 
           <INPUT TYPE="text" NAME="number2" VALUE=""/>
-          <INPUT TYPE="button" NAME="button" Value="Display" onClick="sum()"/>
-          <INPUT TYPE="text" ID="add" NAME="result" VALUE=""/>
+          <INPUT TYPE="button" NAME="button" Value="Submit" onClick="sum()"/>
+          <INPUT TYPE="text" ID="num" NAME="result" VALUE=""/>
          </FORM>
+        
+        <div>This text is the content of the box. inputNumVal . alert(inputNumVal). document.getElementById("number_people").value = "number_people"
+          <script>
+            function getInputValue(){
+              var inputNumVal = document.getElementById('num').value = num1;
+              alert(inputNumVal);
+          }
+    </script>
+    </div>
       </BODY>
 </HTML>
 
