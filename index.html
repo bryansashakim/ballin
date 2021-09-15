@@ -1,4 +1,4 @@
-<!--
+
 <!DOCTYPE html>
 <html>
   <style>
@@ -10,6 +10,23 @@ div {
   margin: 20px;
 }
 </style>
+
+<script type="text/javascript">
+          function sum()
+          {
+
+             var num1 = document.myform.number1.value;
+             var num2 = document.myform.number2.value;
+             document.getElementById('toDisplay').value = num1;
+          }
+        </script>
+
+<FORM NAME="myform">
+          <INPUT TYPE="text" NAME="number1" VALUE=""/> + 
+          <INPUT TYPE="text" NAME="number2" VALUE=""/>
+          <INPUT TYPE="button" NAME="button" Value="=" onClick="toDisplay()"/>
+          <INPUT TYPE="text" ID="toDisplay" NAME="result" VALUE=""/>
+        </FORM>
   
   <body>
     <h1>How many people are at the Basketball courts?</h1>
@@ -43,8 +60,10 @@ alert(inputNumVal);
 
       </body>
 </html>
--->
 
+
+
+<!--
 <HTML>
       <HEAD>
         <TITLE>Sum</TITLE>
@@ -71,3 +90,4 @@ alert(inputNumVal);
 
       </BODY>
 </HTML>
+-->
