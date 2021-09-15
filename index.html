@@ -1,4 +1,4 @@
-
+<!--
 <!DOCTYPE html>
 <html>
   <style>
@@ -60,6 +60,33 @@ alert(inputNumVal);
 
       </body>
 </html>
+
+-->
+
+
+<HTML>
+      <HEAD>
+        <TITLE>Sum</TITLE>
+        <script type="text/javascript">
+          function sum()
+          {
+             var num1 = document.myform.number1.value;
+             var num2 = document.myform.number2.value;
+             document.getElementById('add').value = num1;
+          }
+        </script>
+      </HEAD>
+      <BODY>
+        <h1>How many people are at the Basketball courts?</h1>
+        <p>Use your eyes to count and type in the number of people. </p>
+         <FORM NAME="myform">
+          <INPUT TYPE="text" NAME="number1" VALUE=""/> + 
+          <INPUT TYPE="text" NAME="number2" VALUE=""/>
+          <INPUT TYPE="button" NAME="button" Value="Display" onClick="sum()"/>
+          <INPUT TYPE="text" ID="add" NAME="result" VALUE=""/>
+         </FORM>
+      </BODY>
+</HTML>
 
 
 
